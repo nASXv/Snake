@@ -14,9 +14,7 @@
         >
 
     <Grid>
-        <Menu DockPanel.Dock="Top">
-            <MenuItem x:Name="menuLanguage" FontSize="20" Header="Language"  Background="#d9d9d9" Height="35" Width="255" Margin="60,200,10,10" />
-        </Menu>
+        <Menu DockPanel.Dock="Top"/>
         <Canvas HorizontalAlignment="Center" Height="500" Margin="391,10,10,0" VerticalAlignment="Top" Width="500" Name ="GameArea" Background="#d9d9d9"/>
         <Button Background="White"  FontWeight="Bold" Content="Play" HorizontalAlignment="Center" Margin="85,340,616,0" VerticalAlignment="Top" Width="200" Click="Play" RenderTransformOrigin="1.133,1.5" Height="50" FontSize="25" Name="btn_Play"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,30,0,0" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" FontStyle="Italic" FontSize="30" Name="text_ScoreLable" />

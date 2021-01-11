@@ -46,6 +46,8 @@ namespace ZmeykaLib
 
 
 
+
+
         void TImers_Launch()
         {
             gameTickTimer.Tick -= UpdateEvents;
@@ -81,6 +83,7 @@ namespace ZmeykaLib
 
             apples = 0;
 
+            Set_Score();
             Map_Create();
             Set_Colors();
             Spawn_Snake();
@@ -116,7 +119,23 @@ namespace ZmeykaLib
         void Set_RED()
         {
             Color color = DeadSnake;
+            Snake = DeadSnake;
         }
+
+        void Update_Record()
+        {
+            if(apples > record)
+            {
+                record = apples;
+                text_record.Text = "" + record;
+            }
+        }
+
+        void Set_Score()
+        {
+            text_score.Text = "" + apples;
+        }
+
         void Die()
         {
             Update_Record();
