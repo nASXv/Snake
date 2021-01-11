@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Snake.Resources"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+    
+    <v:String x:Key="t_Play">ИГРАТЬ</v:String>
+    <v:String x:Key="t_Restart">РЕСТАРТ</v:String>
+    <v:String x:Key="t_Exit">ВЫХОД</v:String>
+    <v:String x:Key="t_Score">Счёт:</v:String>
+    <v:String x:Key="t_Record">Рекорд:</v:String>
+    <v:String x:Key="t_Lang">Выбрать язык</v:String>
+
+</ResourceDictionary>

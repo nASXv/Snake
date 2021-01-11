@@ -48,7 +48,7 @@ namespace ZmeykaLib
 
 
 
-        void TImers_Launch()
+        void TImers_Launch() 
         {
             gameTickTimer.Tick -= UpdateEvents;
             gameTickTimer.Tick += UpdateEvents;
@@ -59,8 +59,7 @@ namespace ZmeykaLib
         void UpdateEvents(object source, EventArgs e)
         {
             FrameUpdate();
-            if(!isAlive)
-            {
+            if(!isAlive) {
                 gameTickTimer.Stop();
             }
         }
@@ -71,8 +70,7 @@ namespace ZmeykaLib
             this.text_record = text_record;
             this.text_score = text_score;
 
-            if(start)
-            {
+            if(start) {
                 Start();
             }
         }
@@ -117,27 +115,25 @@ namespace ZmeykaLib
         }
 
         void Set_RED()
-        {
-            Color color = DeadSnake;
-
-            Snake = DeadSnake;
+        { 
+               Color color = DeadSnake;
+               Snake = DeadSnake;
         }
 
         void Update_Record()
         {
-            if(apples > record)
-            {
+            if(apples > record) {
                 record = apples;
-                text_record.Text = "" + record;
+                text_record.Text ="" + record;
             }
         }
 
         void Set_Score()
         {
-            text_score.Text = "" + apples;
+            text_score.Text ="" + apples;
         }
 
-        void Die()
+        void Die() 
         {
             Update_Record();
             Set_RED();
@@ -148,7 +144,7 @@ namespace ZmeykaLib
         {
             Position pos = new Position(random.Next(0, mapSize), random.Next(0, mapSize));
 
-            while(cells[pos.x, pos.y].type != Cell.Type.nothing)
+            while(cells[pos.x, pos.y].type != Cell.Type.nothing) 
             {
                 pos = new Position(random.Next(0, mapSize), random.Next(0, mapSize));
             }
@@ -173,8 +169,7 @@ namespace ZmeykaLib
 
         public void Input(object sender, KeyEventArgs e)
         {
-            switch(e.Key)
-            {
+            switch(e.Key) {
                 case Key.Up: if(direction != "down") nextDirection = "up"; break;
                 case Key.Down: if(direction != "up") nextDirection = "down"; break;
                 case Key.Left: if(direction != "right") nextDirection = "left"; break;
@@ -234,8 +229,7 @@ namespace ZmeykaLib
         {
             Cell cell = cells[position.x, position.y];
 
-            switch(cell.type)
-            {
+            switch(cell.type) {
                 case Cell.Type.nothing: break;
                 case Cell.Type.point: Collect(); break;
                 case Cell.Type.snake: Die(); break;
@@ -244,8 +238,7 @@ namespace ZmeykaLib
 
         void Cells_Fill()
         {
-            foreach(Cell x in cells)
-            {
+            foreach(Cell x in cells) {
                 if(x.type != Cell.Type.point) x.type = Cell.Type.nothing;
             }
 
@@ -253,12 +246,12 @@ namespace ZmeykaLib
                 cells[x.x, x.y].type = Cell.Type.snake;
         }
 
-        void Move_Snake()
+        void Move_Snake() 
         {
             direction = nextDirection;
 
             Position movement = new Position();
-            switch(direction)
+            switch(direction) 
             {
                 case "up": movement.y = -1; break;
                 case "down": movement.y = 1; break;
@@ -270,7 +263,7 @@ namespace ZmeykaLib
             position.y += movement.y;
 
             Position[] oldBody = new Position[bodyPositions.Length];
-            for(int i = 0; i < oldBody.Length; i++)
+            for(int i = 0; i < oldBody.Length; i++) 
             {
                 oldBody[i] = new Position(bodyPositions[i].x, bodyPositions[i].y);
             }
@@ -278,21 +271,21 @@ namespace ZmeykaLib
             bodyPositions[0] = position;
 
             //move body
-            for(int i = 1; i < bodyPositions.Length; i++)
+            for(int i = 1; i < bodyPositions.Length; i++) 
             {
                 bodyPositions[i] = oldBody[i - 1];
             }
 
         }
 
-        void CreateMap()
+        void CreateMap() 
         {
             rects = new Rectangle[mapSize * mapSize];
 
-            for(int x = 0, y = 0, i = 0; y < mapSize; y++)
+            for(int x = 0, y = 0, i = 0; y < mapSize; y++) 
             {
                 x = 0;
-                while(x < mapSize)
+                while(x < mapSize) 
                 {
                     Rectangle rect = new Rectangle();
                     rect.Fill = new SolidColorBrush(Colors.Blue);
@@ -307,19 +300,19 @@ namespace ZmeykaLib
             }
         }
 
-        void Map_Update()
+        void Map_Update() 
         {
             for(int x = 0, y = 0, i = 0; y < mapSize; y++)
             {
                 x = 0;
                 Color color = Colors.White;
 
-                while(x < mapSize)
+                while(x < mapSize) 
                 {
 
                     Rectangle rect = rects[i];
 
-                    switch(cells[x, y].type)
+                    switch(cells[x, y].type) 
                     {
                         case Cell.Type.point: color = Apple; break;
                         case Cell.Type.nothing: color = Empty; break;
