@@ -96,7 +96,7 @@ namespace ZmeykaLib
 
             for(int x = 0, y = 0; y < mapSize; y++)
             {
-                x = 0;
+                x =0;
                 while(x < mapSize)
                 {
                     cells[x, y] = new Cell();
@@ -105,6 +105,9 @@ namespace ZmeykaLib
                 }
             }
         }
+
+
+
 
         void Set_Colors()
         {

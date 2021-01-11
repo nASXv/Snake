@@ -15,6 +15,9 @@ using System.Windows.Shapes;
 using ZmeykaLib;
 using System.Globalization;
 
+
+
+
 namespace Snake
 {
     /// <summary>
