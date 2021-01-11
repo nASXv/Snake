@@ -12,17 +12,35 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ZmeykaLib;
+using System.Globalization;
 
 namespace Snake
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public int record = 0;
+        ZmeykaClass game;
+
+        private void Play(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            if(game == null)
+                game = new ZmeykaClass(GameArea, text_Score, text_Record);
+            else game.Start();
+
+            btn_Play.Content = "RESTART";
+        }
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            game.Input(sender, e);
         }
     }
 }
+
