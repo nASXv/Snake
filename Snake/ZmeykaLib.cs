@@ -119,6 +119,7 @@ namespace ZmeykaLib
         void Set_RED()
         {
             Color color = DeadSnake;
+
             Snake = DeadSnake;
         }
 
