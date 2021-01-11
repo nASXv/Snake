@@ -46,8 +46,6 @@ namespace ZmeykaLib
 
 
 
-
-
         void TImers_Launch()
         {
             gameTickTimer.Tick -= UpdateEvents;
