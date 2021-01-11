@@ -107,8 +107,6 @@ namespace ZmeykaLib
         }
 
 
-
-
         void Set_Colors()
         {
             Empty = (Color)ColorConverter.ConvertFromString("#e3e3e3");
