@@ -106,7 +106,6 @@ namespace ZmeykaLib
             }
         }
 
-
         void Set_Colors()
         {
             Empty = (Color)ColorConverter.ConvertFromString("#e3e3e3");
@@ -171,10 +170,10 @@ namespace ZmeykaLib
         public void Input(object sender, KeyEventArgs e)
         {
             switch(e.Key) {
-                case Key.Up: if(direction != "down") nextDirection = "up"; break;
-                case Key.Down: if(direction != "up") nextDirection = "down"; break;
-                case Key.Left: if(direction != "right") nextDirection = "left"; break;
-                case Key.Right: if(direction != "left") nextDirection = "right"; break;
+                case Key.W: if(direction != "down") nextDirection = "up"; break;
+                case Key.S: if(direction != "up") nextDirection = "down"; break;
+                case Key.A: if(direction != "right") nextDirection = "left"; break;
+                case Key.D: if(direction != "left") nextDirection = "right"; break;
                 default: break;
             }
         }

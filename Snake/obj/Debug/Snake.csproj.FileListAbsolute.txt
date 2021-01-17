@@ -34,3 +34,39 @@ C:\Users\user\source\repos\Snake\obj\Debug\SelectLanguage.baml
 C:\Users\user\source\repos\Snake\obj\Debug\Snake.Resources.Lang ru.resources
 C:\Users\user\source\repos\Snake\obj\Debug\Snake.Resources.Lang.resources
 C:\Users\user\source\repos\Snake\obj\Debug\Snake.csproj.CopyComplete
+D:\Github Repos\Snake\Snake\bin\Debug\Snake.exe.config
+D:\Github Repos\Snake\Snake\bin\Debug\Snake.exe
+D:\Github Repos\Snake\Snake\bin\Debug\Snake.pdb
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Language.dll
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Text.UI.dll
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Text.Data.dll
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.CoreUtility.dll
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Text.Logic.dll
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Threading.dll
+D:\Github Repos\Snake\Snake\bin\Debug\System.Collections.Immutable.dll
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Validation.dll
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Text.UI.xml
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Text.Data.xml
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.CoreUtility.xml
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Text.Logic.xml
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Threading.xml
+D:\Github Repos\Snake\Snake\bin\Debug\Microsoft.VisualStudio.Validation.xml
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.csprojAssemblyReference.cache
+D:\Github Repos\Snake\Snake\obj\Debug\MainWindow.g.cs
+D:\Github Repos\Snake\Snake\obj\Debug\SelectLanguage.g.cs
+D:\Github Repos\Snake\Snake\obj\Debug\App.g.cs
+D:\Github Repos\Snake\Snake\obj\Debug\Snake_MarkupCompile.cache
+D:\Github Repos\Snake\Snake\obj\Debug\Snake_MarkupCompile.lref
+D:\Github Repos\Snake\Snake\obj\Debug\App.baml
+D:\Github Repos\Snake\Snake\obj\Debug\MainWindow.baml
+D:\Github Repos\Snake\Snake\obj\Debug\Resources\lang.ru-RU.baml
+D:\Github Repos\Snake\Snake\obj\Debug\Resources\lang.baml
+D:\Github Repos\Snake\Snake\obj\Debug\SelectLanguage.baml
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.g.resources
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.Resources.Lang ru.resources
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.Resources.Lang.resources
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.Properties.Resources.resources
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.csproj.GenerateResource.cache
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.csproj.CopyComplete
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.exe
+D:\Github Repos\Snake\Snake\obj\Debug\Snake.pdb
